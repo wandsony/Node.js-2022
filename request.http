@@ -1,0 +1,24 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Borracha",
+    "price": 1.5
+}
+
+###
+GET http://localhost:4002/products
+
+###
+GET http://localhost:4002/products/a0ed0b46-cc61-4aa8-9ce8-9e9761481f0c
+###
+PUT http://localhost:4002/products/
+content-type: application/json
+
+{
+    "name": "Caneta lilás",
+    "price": 3
+}
+
+###
+DELETE http://localhost:4002/products/a0ed0b46-cc61-4aa8-9ce8-9e9761481f0c
